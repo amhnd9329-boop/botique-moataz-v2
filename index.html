@@ -3,31 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>بوتيك معتز V2</title>
+<title>بوتيك معتز | سوق ابوشراء</title>
 <style>
-body{font-family:'Segoe UI';background:linear-gradient(135deg,#f8e8f0 0%,#fff5f9 100%);margin:0;padding-bottom:80px}
-header{background:linear-gradient(90deg,#d81b60,#ec407a);color:white;text-align:center;padding:25px 15px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Tahoma;background:linear-gradient(135deg,#f8e8f0 0%,#fff5f9 100%);color:#333;padding-bottom:120px}
+header{background:linear-gradient(90deg,#d81b60,#ec407a);color:white;text-align:center;padding:25px 15px;box-shadow:0 4px 15px rgba(216,27,96,0.3)}
+header h1{font-size:1.8em;margin-bottom:5px}
+header .location{font-size:0.9em;background:rgba(255,255,255,0.2);display:inline-block;padding:5px 12px;border-radius:20px;margin-top:5px}
 .container{max-width:600px;margin:20px auto;padding:0 15px;display:grid;gap:20px}
-.card{background:white;border-radius:20px;box-shadow:0 6px 20px rgba(0,0,0,0.08);overflow:hidden}
-.card img{width:100%;height:250px;object-fit:cover}
+.card{background:white;border-radius:20px;box-shadow:0 6px 20px rgba(0,0,0,0.08);overflow:hidden;transition:transform 0.3s}
+.card:hover{transform:translateY(-5px)}
+.card img{width:100%;height:220px;object-fit:cover;border-bottom:3px solid #f8e8f0}
 .card-body{padding:15px}
-.card h3{color:#d81b60;margin-bottom:8px}
-.btn-whatsapp{display:block;background:#25D366;color:white;text-align:center;padding:12px;border-radius:12px;text-decoration:none;font-weight:bold}
-.footer-btn{position:fixed;bottom:0;left:0;right:0;background:#25D366;color:white;text-align:center;padding:15px;font-weight:bold;text-decoration:none}
+.card h3{color:#d81b60;font-size:1.2em;margin-bottom:8px}
+.btn-whatsapp{display:block;background:#25D366;color:white;text-align:center;padding:12px;border-radius:12px;text-decoration:none;font-weight:bold;font-size:1em;margin-top:10px}
+.contact-box{position:fixed;bottom:0;left:0;right:0;background:white;padding:12px 15px;box-shadow:0 -4px 15px rgba(0,0,0,0.15);display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.contact-box a{background:#25D366;color:white;text-align:center;padding:14px;border-radius:12px;text-decoration:none;font-weight:bold;font-size:0.95em}
+.contact-box .call{background:#1976d2}
+.delivery-note{text-align:center;background:#fff3cd;color:#856404;padding:10px;border-radius:12px;font-weight:bold;margin-bottom:15px}
 </style>
 </head>
 <body>
-<header><h1>✨ بوتيك معتز V2 ✨</h1><p>ارقى المنتجات النسائية</p></header>
+<header>
+  <h1>✨ بوتيك معتز ✨</h1>
+  <div class="location">📍 الابيض - سوق ابوشراء</div>
+</header>
+
 <div class="container">
+  <div class="delivery-note">🚚 يوجد توصيل دليفيري داخل الابيض</div>
+
   <div class="card">
-    <img src="https://i.imgur.com/1.jpg" alt="منتج">
+    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800&auto=format&fit=crop" alt="ملبوسات رجالية">
     <div class="card-body">
-      <h3>ساعة نسائية فخمة</h3>
-      <p>تصميم عصري. للسعر اضغطي واتساب</p>
-      <a class="btn-whatsapp" href="https://wa.me/249XXXXXXXXX" target="_blank">اطلبي هسي واتساب 📱</a>
+      <h3>ملبوسات رجالية</h3>
+      <p>تيشيرتات، قمصان، بناطلين بأحدث الموديلات</p>
+      <a class="btn-whatsapp" href="https://wa.me/249126715616?text=عايز_ملبوسات_رجالية" target="_blank">اطلب هسي واتساب 📱</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?q=80&w=800&auto=format&fit=crop" alt="ملبوسات اطفالية">
+    <div class="card-body">
+      <h3>ملبوسات اطفالية</h3>
+      <p>ارقى الملابس للاطفال اولاد وبنات</p>
+      <a class="btn-whatsapp" href="https://wa.me/249126715616?text=عايز_ملبوسات_اطفال" target="_blank">اطلب هسي واتساب 📱</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=800&auto=format&fit=crop" alt="ساعات رجالية">
+    <div class="card-body">
+      <h3>ساعات رجالية</h3>
+      <p>ساعات فخمة وعملية تناسب كل الاذواق</p>
+      <a class="btn-whatsapp" href="https://wa.me/249126715616?text=عايز_ساعة_رجالية" target="_blank">اطلب هسي واتساب 📱</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1548169874-53e85f753f1e?q=80&w=800&auto=format&fit=crop" alt="ساعات نسائية">
+    <div class="card-body">
+      <h3>ساعات نسائية</h3>
+      <p>تصميم عصري وانيق لكل المناسبات</p>
+      <a class="btn-whatsapp" href="https://wa.me/249126715616?text=عايزة_ساعة_نسائية" target="_blank">اطلب هسي واتساب 📱</a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?q=80&w=800&auto=format&fit=crop" alt="هدايا">
+    <div class="card-body">
+      <h3>هدايا</h3>
+      <p>بوكسات هدايا مميزة للمناسبات والتوصيل متاح</p>
+      <a class="btn-whatsapp" href="https://wa.me/249126715616?text=عايز_هدية" target="_blank">اطلب هسي واتساب 📱</a>
     </div>
   </div>
 </div>
-<a href="https://wa.me/249XXXXXXXXX" class="footer-btn" target="_blank">🛍️ اطلب هسي واتساب</a>
+
+<div class="contact-box">
+  <a href="https://wa.me/249126715616" target="_blank">💬 واتساب</a>
+  <a href="tel:+249126715616" class="call">📞 مكالمات</a>
+</div>
+
 </body>
-</html>
+      </html>
