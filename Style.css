@@ -1,0 +1,21 @@
+/* ===== واجهة 3D خرافية - بوتيك معتز ===== */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+:root{--pink:#d81b60;--pink-light:#ec407a;--gold:#FFD700;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Cairo', sans-serif;background:linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);color:#fff;padding-bottom:120px;perspective: 1000px;}
+header{background:rgba(216,27,96,0.2);backdrop-filter: blur(15px);border-bottom:1px solid rgba(255,255,255,0.1);color:white;text-align:center;padding:30px 15px;box-shadow:0 8px 32px rgba(0,0,0,0.3);position:sticky;top:0;z-index:10;transform-style: preserve-3d;}
+header h1{font-size:2.2em;margin-bottom:5px;font-weight:900;text-shadow: 0 0 15px var(--pink-light);transform: translateZ(30px);}
+header .location{font-size:0.9em;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);display:inline-block;padding:8px 16px;border-radius:20px;margin-top:8px;transform: translateZ(20px);}
+.container{max-width:600px;margin:30px auto;padding:0 15px;display:grid;gap:30px;}
+.card{background:rgba(255,255,255,0.05);backdrop-filter: blur(10px);border:1px solid rgba(255,255,255,0.1);border-radius:25px;box-shadow: 0 10px 30px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1);overflow:hidden;transition: all 0.4s ease;transform-style: preserve-3d;}
+.card:hover{transform: translateZ(40px) rotateX(5deg) rotateY(-5deg);box-shadow: 0 25px 50px rgba(216,27,96,0.4);border-color: var(--pink-light);}
+.card img{width:100%;height:240px;object-fit:cover;border-bottom:2px solid rgba(255,255,255,0.1);}
+.card-body{padding:20px;transform: translateZ(20px);}
+.card h3{color:var(--gold);font-size:1.3em;margin-bottom:10px;font-weight:700;}
+.card p{color:#ccc;font-size:0.95em;margin-bottom:12px}
+.btn-whatsapp{display:block;background:linear-gradient(90deg,#25D366,#1ebc5a);color:white;text-align:center;padding:14px;border-radius:15px;text-decoration:none;font-weight:bold;font-size:1em;margin-top:10px;box-shadow: 0 5px 15px rgba(37,211,102,0.4);transition: all 0.3s;transform: translateZ(15px);}
+.btn-whatsapp:hover{transform: translateZ(25px) scale(1.05);box-shadow: 0 8px 25px rgba(37,211,102,0.7);}
+.contact-box{position:fixed;bottom:15px;left:15px;right:15px;background:rgba(255,255,255,0.1);backdrop-filter: blur(20px);border:1px solid rgba(255,255,255,0.2);padding:12px;border-radius:20px;box-shadow:0 8px 32px rgba(0,0,0,0.4);display:grid;grid-template-columns:1fr 1fr;gap:12px;z-index:99;transform: translateZ(50px);}
+.contact-box a{background:linear-gradient(90deg,#25D366,#1ebc5a);color:white;text-align:center;padding:16px;border-radius:15px;text-decoration:none;font-weight:bold;font-size:1em;box-shadow: 0 4px 10px rgba(0,0,0,0.3);}
+.contact-box .call{background:linear-gradient(90deg,#1976d2,#2196f3)}
+.delivery-note{text-align:center;background:rgba(255,215,0,0.1);color:var(--gold);padding:14px;border-radius:15px;font-weight:bold;margin-bottom:20px;border:1px solid rgba(255,215,0,0.3);backdrop-filter: blur(5px);transform: translateZ(25px);}
